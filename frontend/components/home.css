@@ -1,0 +1,242 @@
+/* ===== GLOBAL ===== */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #e2e8f0;
+  background-color: #0f172a;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.home-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 30px 30px;
+ 
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.username {
+  font-size: 16px;
+  color: #cbd5f5;
+}
+
+.logout-btn {
+  padding: 6px 6px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  min-width: 90px;
+}
+
+.logout-btn:hover {
+  background: #334155;
+  transform: translateY(-1px);
+}
+
+/* ===== FILTERS ===== */
+
+.filters-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+  flex-wrap: nowrap;
+}
+
+.filter-select {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  min-width: 170px;
+}
+
+.filter-select:hover {
+  border-color: #475569;
+}
+
+/* ===== PROBLEM LIST ===== */
+
+.problems-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== PROBLEM CARD ===== */
+
+.problem-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  transition: all 0.2s ease;
+  width: 800px;
+}
+
+.problem-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+}
+
+/* ===== LINK ===== */
+
+.problem-link {
+  text-decoration: none;
+  color: #e2e8f0;
+  display: block;
+}
+
+/* ===== TITLE ===== */
+
+.problem-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #f1f5f9;
+}
+
+.problem-card:hover .problem-title {
+  color: #38bdf8;
+}
+
+/* ===== BADGE ROW ===== */
+
+.badge-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100px;
+}
+
+/* ===== BADGES ===== */
+
+.difficulty-badge,
+.tag-badge {
+  padding: 4px 6px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* ===== DIFFICULTY COLORS ===== */
+
+.easy {
+  background: #22c55e;
+  color: #022c22;
+}
+
+.medium {
+  background: #facc15;
+  color: #422006;
+}
+
+.hard {
+  background: #ef4444;
+  color: #450a0a;
+}
+
+/* ===== TAG ===== */
+
+.tag-badge {
+  background: #38bdf8;
+  color: #082f49;
+}
+
+/* ===== LOADING ===== */
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Laptop */
+
+@media (max-width: 1200px) {
+  .home-container {
+    padding: 25px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .filters-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+
+  .problem-card {
+    padding: 18px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .home-container {
+    padding: 20px 18px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .problem-title {
+    font-size: 16px;
+  }
+
+}

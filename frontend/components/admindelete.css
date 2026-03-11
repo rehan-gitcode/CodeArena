@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+
+.admin-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f4f6f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ===== Header ===== */
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f3f0f0;
+  border-left: 6px solid #007bff;
+  padding-left: 12px;
+}
+
+/* ===== Table Container ===== */
+
+.table-wrapper {
+  width: 90vw;
+  height: 60vh;
+  
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Table ===== */
+
+.problem-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.problem-table th {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.problem-table td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+.problem-table th {
+  background-color: #f8f9fb;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.problem-table tr:hover {
+  background-color: #f5f8ff;
+}
+
+/* ===== Difficulty Badge ===== */
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge.easy {
+  background-color: #e6f9ed;
+  color: #1a7f37;
+}
+
+.badge.medium {
+  background-color: #fff6e0;
+  color: #b26a00;
+}
+
+.badge.hard {
+  background-color: #fdeaea;
+  color: #c0392b;
+}
+
+/* ===== Tags ===== */
+
+.tag {
+  border: 1px solid #ddd;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+  background: #fafafa;
+}
+
+/* ===== Delete Button ===== */
+
+.delete-btn {
+  padding: 7px 14px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+  transform: translateY(-1px);
+}
+
+/* ===== Loading ===== */
+
+.loading-container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Spinner ===== */
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}

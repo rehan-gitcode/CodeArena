@@ -1,0 +1,96 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #090a0c;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color:white;
+  background-color: black;
+}
+
+.textarea {
+  min-height: 80px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+.testcase-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.testcase-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.btn-add,
+.btn-delete,
+.btn-submit {
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+
+}
+
+.btn-add {
+  background: #2d6cdf;
+  color: white;
+}
+
+.btn-delete {
+  background: #e63946;
+  color: white;
+  width: 100px;
+}
+
+.btn-submit {
+  background: #1d8f4d;
+  color: white;
+  width: 100%;
+}
+
+
+
