@@ -58,8 +58,8 @@ async function initializeConnection(){
  
        
 
-         app.listen(2000, () => {
-            console.log("listing on server 2000")
+         app.listen(process.env.PORT, () => {
+            console.log("listing on server")
         })
 
     }catch(err){
